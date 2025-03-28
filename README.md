@@ -5,7 +5,8 @@
 
 단순히 MVI를 적용하는 데 그치지 않고,  
 MVVM(단방향 흐름 기반)과 비교해 **확장성, 복잡도, 협업 측면에서 어떤 차이가 있는지** 검증하는 것이 핵심 목표입니다.
----
+
+
 
 ## 🔍 MVI란 무엇인가?
 
@@ -16,7 +17,6 @@ MVVM(단방향 흐름 기반)과 비교해 **확장성, 복잡도, 협업 측면
 User Action → Event(Intent) → ViewModel → State / Effect → View
 
 
----
 
 ## 💬 MVVM과 차이? 그리고 애매한 진실
 대부분의 MVVM 기반 Android 프로젝트에서도 실제로는  
@@ -33,6 +33,7 @@ viewModel.uiState.collectAsState()       // MVI의 State 구독과 동일
 ```
 결국 명시적으로 Intent / State / Effect를 나누는가,
 아니면 그걸 ViewModel 내에서 묶어서 MVVM 형태로 쓰는가의 차이입니다.
+
 
 ## ❓ 그래서 어떤 걸 택해야 하나요?
 이름을 명확히 구분하고 역할을 나누는 것은 팀 단위 협업이나 유지보수에 있어 명확한 이점을 가집니다.
